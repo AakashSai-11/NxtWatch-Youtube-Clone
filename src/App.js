@@ -57,22 +57,22 @@ class App extends Component {
       >
         <div>
           <Switch>
-            <Route exact path="/login" component={Login} />
-            <ProtectedRoute exact path="/" component={Home} />
-            <ProtectedRoute exact path="/trending" component={TrendingPage} />
-            <ProtectedRoute exact path="/gaming" component={GamingPage} />
+            <Route exact path='/login' component={Login} />
+            <ProtectedRoute exact path='/' component={Home} />
+            <ProtectedRoute exact path='/trending' component={TrendingPage} />
+            <ProtectedRoute exact path='/gaming' component={GamingPage} />
             <ProtectedRoute
               exact
-              path="/saved-videos"
+              path='/saved-videos'
               component={SavedvideosPage}
             />
             <ProtectedRoute
               exact
-              path="/videos/:id"
+              path='/videos/:id'
               component={VideoDetailsPage}
             />
-            <Route path="/not-found" component={NotFound} />
-            <Redirect to="not-found" />
+            <Route path='/not-found' component={NotFound} />
+            <Redirect to='not-found' />
           </Switch>
         </div>
       </UsefulContext.Provider>
